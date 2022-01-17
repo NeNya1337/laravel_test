@@ -16,7 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
-    $productlist = DB::table('products')->get();
-    return view('dashboard',['productlist' => $productlist]);
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/', [\App\Http\Controllers\ProductController::class,'load'])->name('dashboard');
