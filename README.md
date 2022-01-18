@@ -32,5 +32,6 @@ How to:
 * copy env.example & fill credentials
 * run `php artisan  migrate`
 * run `php artisan db:seed ----class=ProductsSeeder`
-* 
+* run `php artisan key:generate`
+
 

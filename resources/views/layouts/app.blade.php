@@ -17,6 +17,7 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
@@ -43,4 +44,5 @@
 
         @livewireScripts
     </body>
+
 </html>

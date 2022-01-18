@@ -13,12 +13,12 @@
                         <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2">
                             @foreach($productlist as $data)
                             <div class="p-6 border-t border-gray-200 md:border-t md:border-l">
-                                <div class="flex items-center">
-                                    <div class="mt-2 text-sm text-gray-500">{{$data->article_number}}</div>
-                                    <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">{{$data->name}} name</div>
+                                <div class="flex content-center items-center">
+                                    <input type="hidden" value="{{$data->article_number}}">
+                                    <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold text-center">{{$data->name}}</div>
                                 </div>
 
-                                <div class="ml-12">
+                                <div class="">
                                     <div class=""><img src="{{$data->image}}" class="img-responsive" style="width:100%" alt="Image"></div>
                                     <div class="mt-2 text-sm text-gray-500">
                                         {{$data->description}}
