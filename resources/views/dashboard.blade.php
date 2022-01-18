@@ -29,6 +29,12 @@
                                 </div>
                             </div>
                             @endforeach
+                            <div id="app-shop">
+                                <shop-item
+                                    v-for="item in groceryList"
+                                    v-bind:shop="item"
+                                ></shop-item>
+                            </div>
                         </div>
                     </div>
                 </div>
