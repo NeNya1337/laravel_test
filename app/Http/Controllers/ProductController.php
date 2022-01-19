@@ -12,7 +12,7 @@ class ProductController extends Controller
     public function load(){
         $produkte = DB::table('products')->get();
         $productlist = Product::all();
-        return view('dashboard',['productlist' => $productlist]);
+        return view('dashboard',['productlist' => $productlist, 'products' => $productlist->toJson()]);
     }
 
 }
